@@ -1,0 +1,41 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #fff7ea;
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .image-container img {
+    transition: transform 0.5s ease-in-out; /* Smooth transition for zoom effect */
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.2); /* Zoom in by 10% on hover */
+  }
+  
+  .sample-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for text */
+  }
+  
+  .image-container:hover .sample-text {
+    opacity: 1; /* Show text on hover */
+  }
+  
