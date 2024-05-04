@@ -39,3 +39,20 @@
     opacity: 1; /* Show text on hover */
   }
   
+.button {
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Adjust colors as needed */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex; /* Change display to inline-flex */
+  justify-content: center; /* Align content horizontally to the center */
+  align-items: center; /* Align content vertically to the center */
+}
+
+.button:hover {
+  background: linear-gradient(to right, #feb47b, #ff7e5f); /* Adjust colors for hover state */
+}

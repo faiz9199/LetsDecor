@@ -53,6 +53,9 @@ const testimonialsData = [
 const Testimonials = () => {
   return (
     <>
+    <div className="text-2xl uppercase font-nunito ml-4 mt-8" id="testimonials">
+      <p>Testimonilas</p>
+    </div>
       <Swiper>
         {testimonialsData.map((testimonial) => (
           <SwiperSlide key={testimonial.id}>

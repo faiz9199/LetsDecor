@@ -5,8 +5,8 @@ import yt from "../assets/images/youtube.png"
 
 const About = () => {
   return (
-    <div className="bg-white mt-10 p-4">
-      <div className="">
+    <div className="bg-white mt-10 p-4" id="about">
+      <div>
         <img className="rounded-full" src={about} alt="about" />
       </div>
       <div className="mt-8 text-4xl font-brush text-primary">

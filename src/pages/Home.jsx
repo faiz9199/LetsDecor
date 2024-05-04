@@ -5,9 +5,9 @@ import wedding from "../assets/images/new-wedding.jpg";
 import birthday from "../assets/images/new-birthday.jpg";
 import party from "../assets/images/new-party.jpg";
 import babyShower from "../assets/images/baby-shower.jpg";
-import About from "./About";
+import About from "../components/About";
 import Testimonials from "../components/Testimonials";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
 
 const Home = () => {
   const cardData = [
@@ -45,7 +45,7 @@ const Home = () => {
     <div>
       <Cover />
       <div className="container mx-auto">
-        <div className="mx-4">
+        <div className="mx-4" id="services">
           <div className="my-6 text-2xl uppercase font-nunito">
             <h1>Our Services</h1>
           </div>
@@ -60,10 +60,10 @@ const Home = () => {
             ))}
           </div>
         </div>
+        <About />
+        <Testimonials />
       </div>
-      <About/>
-      <Testimonials/>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
