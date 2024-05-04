@@ -8,6 +8,8 @@ import babyShower from "../assets/images/baby-shower.jpg";
 import About from "../components/About";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
+import Slider from "../components/Slider";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   const cardData = [
@@ -44,7 +46,8 @@ const Home = () => {
 
   return (
     <div>
-      <Cover />
+      <Navbar/>
+      <Slider/>
       <div className="container mx-auto">
         <div className="mx-4" id="services">
           <div className="my-6 text-2xl uppercase font-nunito">
