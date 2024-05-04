@@ -1,7 +1,7 @@
 import React from "react";
 import Cover from "../components/Cover";
 import Card from "../components/Card";
-import wedding from "../assets/images/new-wedding.jpg";
+import wedding from "../assets/images/wedding.jpg";
 import birthday from "../assets/images/new-birthday.jpg";
 import party from "../assets/images/new-party.jpg";
 import babyShower from "../assets/images/baby-shower.jpg";
@@ -14,30 +14,31 @@ const Home = () => {
     {
       id: 1,
       imageSrc: wedding,
-      title: "Wedding Planner",
+      title: "Wedding Decor",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. At aliquam, repellendus totam suscipit quidem illo.",
+        "Transforming dreams into reality, creating enchanting memories with every detail."
     },
     {
       id: 2,
       imageSrc: birthday,
-      title: "Birthday Planner",
+      title: "Birthday Decor",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. At aliquam, repellendus totam suscipit quidem illo.",
+        "Crafting celebrations that sparkle with joy, tailor-made for each special year."
+  
     },
     {
       id: 3,
       imageSrc: party,
-      title: "Partu Organizer",
+      title: "Corporate Events Decor",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. At aliquam, repellendus totam suscipit quidem illo.",
+        "Infusing professionalism with elegance, setting the stage for successful gatherings",
     },
     {
       id: 4,
       imageSrc: babyShower,
       title: "Baby Shower",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. At aliquam, repellendus totam suscipit quidem illo.",
+        "Welcoming bundles of joy with whimsical charm, every detail a sweet anticipation."
     },
   ];
 

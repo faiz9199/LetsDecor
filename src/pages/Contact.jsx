@@ -44,7 +44,7 @@ const Contact = () => {
                 placeholder="Message"
               />
             </div>
-            <div className="mt-6 button">
+            <div className="mt-6 button ">
               <button>Submit</button>
             </div>
           </div>

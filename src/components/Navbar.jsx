@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/images/logo1.jpg";
+import logo from "../assets/images/logo1.png";
 import { Link } from "react-router-dom";
 
 import "./Navbar.css";
@@ -18,7 +18,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" />
         </a>
         <div className="hamburger" onClick={handleClick}>
-          {click ? <FaTimes size={30} /> : <FaBars size={30} />}
+          {click ? <FaTimes size={20} /> : <FaBars size={20} />}
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">

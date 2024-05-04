@@ -1,7 +1,7 @@
 
 .header {
     position: fixed;
-    height: 90px;
+    height: 60px;
     width: 100%;
     top: 0;
     left: 0;
@@ -66,11 +66,11 @@
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 90px;
+        top: 60px;
         flex-direction: column;
         background-color: rgba(0,0,0,.9);
-        width: 80%;
-        height: 90vh;
+        width: 70%;
+        height: 100vh;
         z-index: 999;
         text-align: center;
         transition: .5s;
