@@ -1,5 +1,4 @@
 import React from "react";
-import Cover from "../components/Cover";
 import Card from "../components/Card";
 import wedding from "../assets/images/wedding.jpg";
 import birthday from "../assets/images/new-birthday.jpg";

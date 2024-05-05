@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/images/logo1.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 
 import "./Navbar.css";
 
@@ -14,37 +15,37 @@ const Navbar = () => {
   return (
     <div className="header">
       <nav className="navbar">
-        <a href="/" className="logo">
+        <RouterLink to="/" className="logo">
           <img src={logo} alt="logo" />
-        </a>
+        </RouterLink>
         <div className="hamburger" onClick={handleClick}>
           {click ? <FaTimes size={20} /> : <FaBars size={20} />}
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <a href="/" onClick={closeMenu}>
+            <Link to="cover" onClick={closeMenu} spy={true} smooth={true} offset={-100} duration={1000}>
               Home
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#services" onClick={closeMenu}>
-              Services
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#about" onClick={closeMenu}>
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#testimonials" onClick={closeMenu}>
-              Testimonials
-            </a>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact" onClick={closeMenu}>
-              Contact
             </Link>
+          </li>
+          <li className="nav-item">
+          <Link to="services" onClick={closeMenu} spy={true} smooth={true} offset={-80} duration={1000}>
+              Services
+            </Link>
+          </li>
+          <li className="nav-item">
+          <Link to="about" onClick={closeMenu} spy={true} smooth={true} offset={-80} duration={1000}>
+              About
+            </Link>
+          </li>
+          <li className="nav-item">
+          <Link to="testimonials" onClick={closeMenu} spy={true} smooth={true} offset={-100} duration={1000}>
+              Testimonials
+            </Link>
+          </li>
+          <li className="nav-item">
+            <RouterLink to="/contact" onClick={closeMenu}>
+              Contact
+            </RouterLink>
           </li>
         </ul>
       </nav>

@@ -1,11 +1,23 @@
 import about from "../assets/images/about.jpg";
-import linkedin from "../assets/images/linkedin.png"
-import insta from "../assets/images/insta.png"
-import yt from "../assets/images/youtube.png"
+import linkedin from "../assets/images/linkedin.png";
+import insta from "../assets/images/insta.png";
+import yt from "../assets/images/youtube.png";
+import { useEffect } from "react";
+import aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    aos.init();
+  }, []);
   return (
-    <div className="bg-white mt-10 p-4" id="about">
+    <div
+      className="bg-white mt-10 p-4"
+      id="about"
+      data-aos-duration="1000"
+      data-aos="fade-up"
+      data-aos-once
+    >
       <div>
         <img className="rounded-full" src={about} alt="about" />
       </div>
