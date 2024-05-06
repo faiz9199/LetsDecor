@@ -1,6 +1,7 @@
 import aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import {Link} from "react-router-dom"
 
 const WorkCard = ({ image, title, venue, date }) => {
   useEffect(() => {
@@ -25,9 +26,11 @@ const WorkCard = ({ image, title, venue, date }) => {
               <p className="font-nunito text-lg font-bold tracking-wide">
                 {date}
               </p>
+              <Link to='/gallery'>
               <button className="mt-6 py-2 px-4 bg-yellow-400 text-gray-800 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300">
                 See more
-              </button>
+              </button></Link>
+              
             </div>
           </div>
         </div>
