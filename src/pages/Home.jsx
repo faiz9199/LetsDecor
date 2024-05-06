@@ -16,6 +16,8 @@ const Home = () => {
       id: 1,
       imageSrc: wedding,
       title: "Wedding Decor",
+      buttonText:"See More",
+      buttonLink:"/works",
       description:
         "Transforming dreams into reality, creating enchanting memories with every detail."
     },
@@ -23,6 +25,8 @@ const Home = () => {
       id: 2,
       imageSrc: birthday,
       title: "Birthday Decor",
+      buttonText:"See More",
+      buttonLink:"/works",
       description:
         "Crafting celebrations that sparkle with joy, tailor-made for each special year."
   
@@ -31,6 +35,8 @@ const Home = () => {
       id: 3,
       imageSrc: party,
       title: "Corporate Events Decor",
+      buttonText:"See More",
+      buttonLink:"/works",
       description:
         "Infusing professionalism with elegance, setting the stage for successful gatherings",
     },
@@ -38,6 +44,8 @@ const Home = () => {
       id: 4,
       imageSrc: babyShower,
       title: "Baby Shower",
+      buttonText:"See More",
+      buttonLink:"/works",
       description:
         "Welcoming bundles of joy with whimsical charm, every detail a sweet anticipation."
     },
@@ -52,13 +60,15 @@ const Home = () => {
           <div className="my-6 text-2xl uppercase font-nunito">
             <h1>Our Services</h1>
           </div>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 md:flex-row">
             {cardData.map((card) => (
               <Card
                 key={card.id}
                 imageSrc={card.imageSrc}
                 title={card.title}
                 description={card.description}
+                buttonText={card.buttonText}
+                buttonLink={card.buttonLink}
               />
             ))}
           </div>

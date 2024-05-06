@@ -1,7 +1,7 @@
 import about from "../assets/images/about.jpg";
-import linkedin from "../assets/images/linkedin.png";
-import insta from "../assets/images/insta.png";
-import yt from "../assets/images/youtube.png";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 import { useEffect } from "react";
 import aos from "aos";
 import "aos/dist/aos.css";
@@ -24,7 +24,7 @@ const About = () => {
       <div className="mt-8 text-4xl font-brush text-primary">
         <p>About Us</p>
       </div>
-      <div className="font-nunito text-lg mt-4">
+      <div className="font-nunito text-base mt-4">
         <p>
           Welcome to Let's Decor, where dreams meet reality through impeccable
           event planning and design. With a passion for creating unforgettable
@@ -39,14 +39,15 @@ const About = () => {
           dedicated to bringing your vision to life, leaving you free to enjoy
           every moment of your special day. With Let's Decor, you can expect
           unparalleled service, unwavering commitment, and a touch of magic in
-          every event we create. Let us turn your dreams into memories that will
-          last a lifetime.
+          every event we create. Let us turn your dreams into memories that will last a lifetime.
         </p>
       </div>
-      <div className="flex gap-3 mt-4 mb-8">
-        <img src={linkedin} alt="linkedin" />
-        <img src={insta} alt="insta" />
-        <img src={yt} alt="yt" />
+      <div className="flex gap-4 my-4">
+        <a href="https://www.instagram.com/lets_dcor/?igsh=MXFmcWh0aGExcTJ2OQ%3D%3D&utm_source=qr">
+          <FaInstagram size={30} />
+        </a>
+        <FaYoutube size={30} />
+        <FaLinkedin size={30} />
       </div>
     </div>
   );

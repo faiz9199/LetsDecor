@@ -23,9 +23,9 @@ const Navbar = () => {
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <Link to="cover" onClick={closeMenu} spy={true} smooth={true} offset={-100} duration={1000}>
+          <RouterLink to="/" onClick={closeMenu}>
               Home
-            </Link>
+            </RouterLink>
           </li>
           <li className="nav-item">
           <Link to="services" onClick={closeMenu} spy={true} smooth={true} offset={-80} duration={1000}>
@@ -45,6 +45,11 @@ const Navbar = () => {
           <li className="nav-item">
             <RouterLink to="/contact" onClick={closeMenu}>
               Contact
+            </RouterLink>
+          </li>
+          <li className="nav-item">
+            <RouterLink to="/works" onClick={closeMenu}>
+              Our Works
             </RouterLink>
           </li>
         </ul>

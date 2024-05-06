@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import aos from "aos";
 import "aos/dist/aos.css";
+import Button from "./Button"; // Assuming Button.js is in the same directory as Card.js
 
-const Card = ({ imageSrc, title, description }) => {
+const Card = ({ imageSrc, title, description, buttonText, buttonLink }) => {
   useEffect(() => {
     aos.init();
   }, []);
@@ -21,9 +22,7 @@ const Card = ({ imageSrc, title, description }) => {
         <p className="font-brush text-3xl mt-4 text-primary">{title}</p>
         <p className="font-nunito text-lg text-primary my-2">{description}</p>
         <div className="my-4">
-          <button className="bg-black text-base text-white px-8 py-2 rounded-lg font-nunito">
-            Book Now
-          </button>
+          <Button text={buttonText} link={buttonLink} />
         </div>
       </div>
     </div>
