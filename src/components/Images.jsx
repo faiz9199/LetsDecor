@@ -8,6 +8,7 @@ const Images = ({ data, onClick }) => {
   return (
     <div className="mx-4">
       <div className="images-container">
+        <p className="text-2xl font-bold uppercase font-nunito">Gallery</p>
         {data.map((slide, index) => (
           <div
             onClick={() => handleClickImage(index)}

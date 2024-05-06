@@ -12,33 +12,29 @@ import {
 } from 'yet-another-react-lightbox/plugins';
 import 'yet-another-react-lightbox/plugins/captions.css';
 import 'yet-another-react-lightbox/plugins/thumbnails.css';
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const Gallery = () => {
 
   const [index, setIndex] = useState(-1);
   return (
     <>
-      {/* <button onClick={() => setOpen(true)}>Open Lightbox</button> */}
-
+      <Navbar/>
       <Images
         data={slides}
         onClick={(currentIndex) => setIndex(currentIndex)}
       />
 
       <Lightbox
-        plugins={[Captions, Download, Fullscreen, Zoom, Thumbnails]}
-        captions={{
-          showToggle: true,
-          descriptionTextAlign: 'end',
-        }}
-        // open={open}
-        // close={() => setOpen(false)}
+        plugins={[Download, Fullscreen, Zoom,]}
 
         index={index}
         open={index >= 0}
         close={() => setIndex(-1)}
         slides={slides}
       />
+      <Footer/>
     </>
   )
 }
